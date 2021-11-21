@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Guess Number</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="mobilethrow.html">Mobile throw</a></li>
+            <li><a href="ScissorsStonePaper.html">Scissors Stone Paper</a></li>
+            <li><a href="GuessNumber.html">Guess Number</a></li>
+            <li><a href="Codebreaker.html">Codebreaker</a></li>
+        </ul>
+    </nav>
+    <main id="backgroundimagegame3">
+        <div class="screen active screen-style">
+            <label>Enter the range </label> 
+            <input type="number" id="game3range">
+            <label>Enter the rounds</label>
+            <input type="number" id="game3maxgames">
+            <button type="button" onclick="entergame3()">Enter Game</button>
+        </div>
+        <div class="screen screen-style">
+            <label>Guess</label> 
+            <input type="number" id="game3guess">
+            <button type="button" onclick="game3()">Guess</button>
+        </div>
+    </main>
+    <script type="text/Javascript" src="js/lib.js"></script>
+    <script type="text/Javascript" src="js/script.js"></script>
+</body>
+</html>

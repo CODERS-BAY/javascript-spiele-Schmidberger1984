@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Mobile throw</title>
+
+</head>
+    <body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="mobilethrow.html">Mobile throw</a></li>
+            <li><a href="ScissorsStonePaper.html">Scissors Stone Paper</a></li>
+            <li><a href="GuessNumber.html">Guess Number</a></li>
+            <li><a href="Codebreaker.html">Codebreaker</a></li>
+        </ul>
+    </nav>
+    <main id="backgroundimagegame1">
+        <div id="conf" >
+            <div id="conf-menu" class="screen active">
+                <div class="grid">
+                        <label>Choose your World</label>
+                        <select name="planet" class="grid-width">
+                            <option value=9.81>Erde</option>
+                            <option value=1.62>Mond</option>
+                            <option value=3.69>Mars</option>
+                            <option value=24.79>Jupiter</option>
+                        </select>
+                        <label>Rounds</label>
+                        <input type=number id="game1maxgames" min="3" max="99" value="3" class="grid-width">
+                </div>
+                <button type="button" onclick="config()"id="conf">Start game</button>
+            </div>
+            <div id="shoot" class="screen" >  
+                    <div class="grid2"> 
+                        <label>Speed</label>
+                        <input type=number id="speedobject" min="1" value="1" class="grid-width">
+                        <label>Angle</label>
+                        <input type=number id="angleobject" min="1" max="45" value="1" class="grid-width">
+                    </div>  
+                    <button id="game1start" type="button" onclick="throwTry()">Throw</button> 
+                    <div id="result">
+                        <div id="count"></div>
+                        <div id="help"></div>
+                    </div> 
+            </div>
+            
+        </div>
+        <img src="image/handy.png" id="handy" >
+        <img src="image/monster.png" id="monster">
+    </main> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/Javascript" src="js/lib.js"></script>
+    <script type="text/Javascript" src="js/script.js"></script>
+</body>
+</html>
