@@ -1,0 +1,353 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+:root{
+    --maincolor:rgb(194, 97, 18);
+    --navcolor: rgb(80, 77, 77);
+}
+#games{
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    }
+
+#games a{
+    color: rgb(8, 65, 104);
+    font-size: larger;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    background-color: aqua;
+    height: 10vh;
+    text-decoration: none;
+    border-radius: 15px;
+   
+}
+#games a:hover{
+   background-color: rgb(17, 112, 175);
+   transition: 500ms;
+}
+.row{
+    width: 100%;
+}
+header{
+    height: 20vh;
+    text-align: center;
+    font-size: 2rem;
+}
+#h1main{
+    color:var(--maincolor);
+    padding: 20px;
+    
+    font-size: 3rem;
+}
+#footermain{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    display: flex;
+    align-items: center;
+    background-color: var(--navcolor);
+}
+#footermain{
+    color:var(--maincolor);
+    padding: 0 20px;
+}
+#footermain div{
+    height: 10vh;
+    width: 50vw;
+    display: flex;
+    align-items: center;   
+}
+#footermain div a{
+    color:var(--maincolor);
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+}
+#footermain p{
+    width:50vw ;
+    text-align: end;
+}
+#mainbackgroundimage{
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color:red;
+    background-image: url(../image/gamerwallpapersmall.jpg);
+    background-position: center;
+    background-size: cover;
+}
+/*-------------------Menü----------------------------------------*/
+.screen{
+    padding: 80px 40px;
+    display: flex;
+    display: none; 
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    
+}
+.screen.active{
+    display: flex;
+}
+.screen-style{
+    background-color: aliceblue; 
+    box-shadow: 1px 1px 5px #777; 
+}
+
+
+/*-------------------Popup----------------------------------------*/
+#popup{
+    padding: 100px 100px;
+    box-shadow: 1px 1px 5px #777;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    background-color: var(--navcolor);
+    color: var(--maincolor);
+}
+
+#popup button {
+    background-color: var(--maincolor);
+    padding: 10px;
+}
+
+
+/*-------------------Navbar----------------------------------------*/
+nav{
+    background-color: var(--navcolor);
+    height: 10vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+}
+nav ul li{
+    list-style: none;
+
+}
+nav ul li a{
+    font-family: 'Press Start 2P', cursive;
+    text-decoration: none;
+    padding: 0 30px;
+    color:var(--maincolor);
+}
+nav ul li a:hover{
+    color: rgb(197, 142, 71);
+    transition: 500ms;
+}
+
+ /*-----------------------------GAME1-----------------------------------*/
+#backgroundimagegame1{
+    color:red;
+    font-size: x-large;
+    font-weight: 900;
+    background-image: url(../image/earth.jpg);
+    background-position: contain;
+    background-repeat: none;
+    background-size: cover;
+    display: flex;
+    height: calc( 100% - 10vh );
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#shoot{
+    margin: 20px;
+    flex-direction: column;
+    width: 600px;
+}
+#conf{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+#conf-menu{
+    width: 600px;
+}
+.grid{
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2,300px);
+}
+.grid2{
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2,120px);
+}
+.grid-width{
+    width: 100px;
+}
+#game1maxgames{
+    margin: 0;
+}
+
+#conf label{
+    margin: 0 20px;
+}
+#result{
+    margin: 20px;
+}
+#result div{
+    margin: 10px;
+}
+#handy{
+    position: absolute;
+    height: 50px;
+    z-index: 100;
+    left:100px;
+    bottom: 300px;
+}
+#monster{
+    position: absolute;
+    bottom: 0;
+    height: 200px;
+}
+#result{
+    height: 100px;
+}
+ /*-----------------------------GAME2-----------------------------------*/
+ #backgroundimagegame2{
+    height:calc( 100% - 10vh );
+    background-image: url(../image/backgroundimage2.jpg);
+    background-position: cover;
+    background-repeat: none;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:calc( 100% - 10vh ) ;
+    width: 100%;
+    
+}
+#backgroundimagegame2 div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#h1game1{
+    margin: 0;
+    
+}
+#h1game1 h1{
+    margin: 10px;
+    padding: 20px;
+    background-color: rgb(1, 171, 238);
+    border:2px solid ;
+}
+#backgroundimagegame2 div div{
+    flex-direction: row;
+}
+.hidden{
+    visibility: hidden;
+}
+#stone, #paper, #scissors{
+    justify-content: flex-end;
+}
+
+.rightside{
+    justify-content: end;
+}
+#game2result{
+    margin: 20px 0;
+    padding:0px  20px;
+    text-align: center;
+    font-size: 10rem;
+    background-color: rgb(1, 171, 238);
+    border:2px solid ;
+}
+ /*-----------------------------GAME3-----------------------------------*/
+ #backgroundimagegame3{
+    height:calc( 100% - 10vh );
+    background-image: url(../image/guessNumber.jpg);
+    background-position: cover;
+    background-repeat: none;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+#backgroundimagegame3 > div >label,input,button{
+    margin: 5px;
+}
+ /*-----------------------------GAME4-----------------------------------*/
+ #backgroundimagegame4{
+    height:calc( 100% - 10vh );
+    background-image: url(../image/Codebreaker.jpg);
+    background-position: cover;
+    background-repeat: none;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ #game4inputdiv{
+   margin: 20px; 
+   display: flex;
+   align-items: center;
+   justify-content: center; 
+ }
+ #game4input{
+    height: 43px;
+    border:2px solid black ;
+    font-size:x-large;
+ }
+ 
+ #game4start{
+    background-color: aliceblue;
+    padding: 10px;
+    border:2px solid black ;
+    margin-left: 10px;
+    
+    
+ }
+
+#game4help{
+    height: 300px;
+    Overflow-y:scroll;
+    width: 500px; 
+    background-color: rgb(25, 19, 110);
+    border:2px solid rgb(44, 99, 180);
+
+}        
+ .helptext{
+     background-color: white;
+     padding: 10px;
+     margin: 10px;
+     width: 400px;  
+     display: flex;
+ }
+
+

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Scissors-Stone-Paper</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="mobilethrow.html">Mobile throw</a></li>
+            <li><a href="ScissorsStonePaper.html">Scissors Stone Paper</a></li>
+            <li><a href="GuessNumber.html">Guess Number</a></li>
+            <li><a href="Codebreaker.html">Codebreaker</a></li>
+        </ul>
+    </nav>
+    <main id="backgroundimagegame2">
+        <header id="h1game1">
+            <h1 > Scissors, Stone and Paper</h1>
+        </header>
+        <div>
+            <div>
+                <div class="rightside"><img src="image/stone_left.png" alt="schere" class="game2imagesize" onclick="game2start('stone')" id="stoneUser"></div>
+                <div ><img src="image/stone_right.png" alt="stone" class="game2imagesize hidden" id="stone"></div>
+            </div>
+            <div>
+                <div class="rightside"><img src="image/paper_left.png" alt="schere" class="game2imagesize" onclick="game2start('paper')" id="paperUser"></div>
+                <div><img src="image/paper_right.png" alt="paper" class="game2imagesize hidden" id="paper"></div>
+            </div>
+            <div> 
+                <div class="rightside"><img src="image/scissors_left.png" alt="schere" class="game2imagesize" onclick="game2start('scissors')"  id="scissorsUser"></div>
+                <div><img src="image/scissors_right.png" alt="scissors" class="game2imagesize hidden"  id="scissors"></div>
+            </div>
+        </div>
+        <div id="game2result">0:0</div>
+    </main> 
+    <script type="text/Javascript" src="js/lib.js"></script>
+    <script type="text/Javascript" src="js/script.js"></script>
+</body>
+</html>
